@@ -17,6 +17,7 @@ Route::post('input-age', function (Request $request) {
     ]);
 
     return response()->json([
+        'success' => true,
         'message' => 'Age successfully submitted!',
         'data'    => [
                 'age' => $request->age
